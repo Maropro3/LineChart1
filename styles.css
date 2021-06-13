@@ -1,0 +1,61 @@
+body {
+    margin:0px;
+    overflow: hidden;
+    background-color: rgb(31, 31, 31);
+}
+.line-path{
+
+    fill: none;
+    
+    stroke-width: 4;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+
+}
+
+text {
+    font-size: 1.6em;
+    font-family: sans-serif;
+    fill: #b3aca7
+}
+
+.tick text {
+    font-size: 1.7em;
+    fill: #a09996
+}
+
+.tick line {
+    stroke: #504e4e;
+    
+}
+
+.axis-label {
+    font-size: 2.2em;
+    fill: #948e8d
+}
+
+.tooltip {
+    position: absolute;
+    pointer-events: none;
+    background-color: rgb(54, 54, 54);
+    font-family: sans-serif;
+    color: blanchedalmond;
+    font-size: 1.1em;
+
+}
+
+.legendText{
+    font-size: 1.3em;
+}
+
+.legend{
+    outline: solid 1px #C0C0BB;
+    outline-offset: 5px;
+    border-radius: 10px;
+  
+}
+
+.legendBack {
+    fill:rgb(54, 54, 54);
+    opacity: 1;
+}
