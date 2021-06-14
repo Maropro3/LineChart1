@@ -145,9 +145,9 @@ export const linePlot = (selection,props) => {
     // .delay(function(d, i) { return i * 500; })
     // .ease("linear")
   
-    var linesP2 = linesL._groups;
+    // var linesP2 = linesL._groups;
 
-     var totalLength = [linesP2[0][0].getTotalLength(), linesP2[0][1].getTotalLength()];
+    //  var totalLength = [linesP2[0][0].getTotalLength(), linesP2[0][1].getTotalLength()];
 
      //console.log(totalLength)
 
