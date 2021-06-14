@@ -149,9 +149,9 @@
       // .delay(function(d, i) { return i * 500; })
       // .ease("linear")
     
-      var linesP2 = linesL._groups;
+      //var linesP2 = linesL._groups;
 
-       [linesP2[0][0].getTotalLength(), linesP2[0][1].getTotalLength()];
+      // [linesP2[0][0].getTotalLength(), linesP2[0][1].getTotalLength()];
 
        //console.log(totalLength)
 
