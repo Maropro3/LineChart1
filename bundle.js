@@ -135,7 +135,7 @@
 
       const lines = g.merge(gEnter).selectAll('.line-path').data(dataPure);
 
-      var linesL = lines.enter().append('path')
+      lines.enter().append('path')
       .merge(lines)
         .attr('class', 'line-path')
         .attr('d', d => lineGenerator(d.values))
@@ -143,25 +143,6 @@
         ;
       
       lines.exit().remove();
-
-      // linesL.transition()
-      // .duration(500)
-      // .delay(function(d, i) { return i * 500; })
-      // .ease("linear")
-    
-      //var linesP2 = linesL._groups;
-
-      // [linesP2[0][0].getTotalLength(), linesP2[0][1].getTotalLength()];
-
-       //console.log(totalLength)
-
-      // d3.select(linesP2[0][0])
-      // .attr("stroke-dasharray", totalLength[0] + " " + totalLength[0] ) 
-      // .attr("stroke-dashoffset", totalLength[0])
-      //   .transition()
-      //     .duration(500)
-      //     .ease("linear")
-      //     .attr("stroke-dashoffset", 0);
 
       const tooltipLine = g.merge(gEnter).append('line');
 
@@ -214,7 +195,7 @@
               })
           });
 
-        //  console.log(dataRR)
+          dataRR.sort((a,b) => (a.value < b.value) ? 1:(b.value < a.value) ? -1:0);
 
           tooltipLine.attr('stroke', '#f5f0e1')
               .attr('x1', xM)
@@ -525,7 +506,7 @@
       
   };
 
-  d3.csv('https://raw.githubusercontent.com/Maropro3/DataUpload/main/ExoplanetsTest3.csv').then(loadedData => {
+  d3.csv('https://raw.githubusercontent.com/Maropro3/DataUpload/main/ExoplanetsLine.csv').then(loadedData => {
   //     let dataC = data.filter(d => d.disc_pubdate !== "" );
   //    // let dataC2 = data.filter(d => d.pl_bmasse !== "" );
   //     let dataC3 = dataC.filter(d => d.pl_rade !== "" );

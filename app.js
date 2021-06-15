@@ -175,7 +175,7 @@ const render = () => {
     
 }
 
-d3.csv('https://raw.githubusercontent.com/Maropro3/DataUpload/main/ExoplanetsTest3.csv').then(loadedData => {
+d3.csv('https://raw.githubusercontent.com/Maropro3/DataUpload/main/ExoplanetsLine.csv').then(loadedData => {
 //     let dataC = data.filter(d => d.disc_pubdate !== "" );
 //    // let dataC2 = data.filter(d => d.pl_bmasse !== "" );
 //     let dataC3 = dataC.filter(d => d.pl_rade !== "" );
